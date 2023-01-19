@@ -2,6 +2,11 @@
   max-width: 960px;
   margin-left: 120px;
   margin-right: 120px;
+  max-width: 100%!important;
+}
+
+.container {
+  max-width: 100%!important;
 }
 
 .btn_my_team {
@@ -9,6 +14,34 @@
   display: -webkit-inline-box;
   -webkit-box-align: baseline;
   font-family: 'Work Sans';
-  margin-inline: 8px;
+  margin-inline: 20px;
   padding: 24px;
+  max-width: 100%!important;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card_title {
+  font-size: small;
+  font-family: Exo, sans-serif;
+
+
 }
