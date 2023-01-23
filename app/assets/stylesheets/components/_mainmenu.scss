@@ -24,6 +24,8 @@
   // margin-inline: 20px!important;
   padding: 16px;
   max-width: 100%!important;
+  text-decoration: none;
+  color: black;
 
 }
 
@@ -59,4 +61,15 @@
 .btn_temp {
   width: 100px;
   background-color: rgb(227, 227, 227);
+  align-self: center;
+}
+
+.middle_card {
+  height: 360px;
+  align-self: center;
+}
+
+.card {
+
+
 }
