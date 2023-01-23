@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
+  get "teams", to: "teams#index"
+  get "teams/:id", to: "teams#show"
+  get "teams/new", to: "teams#new"
 end
