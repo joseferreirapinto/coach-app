@@ -9,13 +9,20 @@
   max-width: 100%!important;
 }
 
+.top_container {
+  max-width: 100%!important;
+  margin-inline: 20px!important;
+
+
+}
+
 .btn_my_team {
   font-family: Exo, sans-serif;
   display: -webkit-inline-box;
   -webkit-box-align: baseline;
   font-family: 'Work Sans';
-  margin-inline: 20px;
-  padding: 24px;
+  // margin-inline: 20px!important;
+  padding: 16px;
   max-width: 100%!important;
 
 }
