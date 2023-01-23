@@ -17,8 +17,6 @@ class TeamsController < ApplicationController
     redirect_to team_path(@team)
   end
 
-  private
-
   def team_params
     params.require(:team).permit(:name)
   end
