@@ -4,14 +4,14 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
-  get "teams", to: "teams#index"
-  get "teams/:id", to: "teams#show"
-  get "teams/new", to: "teams#new"
-  post "teams", to: "teams#create"
-  get "teams/:id/edit", to: "teams#edit"
-  patch "teams/:id", to: "teams#update"
-  delete "teams/:id", to: "teams#destroy"
+  # get "teams", to: "teams#index"
+  # get "teams/:id", to: "teams#show"
+  # get "teams/new", to: "teams#new"
+  # post "teams", to: "teams#create"
+  # get "teams/:id/edit", to: "teams#edit"
+  # patch "teams/:id", to: "teams#update"
+  # delete "teams/:id", to: "teams#destroy"
+  resources :teams
 end
