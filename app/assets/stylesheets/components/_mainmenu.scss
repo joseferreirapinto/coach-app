@@ -71,18 +71,26 @@
   align-self: center;
 }
 
+// .left_card {
+//   // position:absolute;
+// }
+
 .opponent_logo {
   align-self: center;
 }
 
 .container_slider {
   background-color: yellow;
-  max-width: 80%;
+  width: 240px;
   height: 300px;
   margin-top: 8px;
-  display: inline;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  align-self: center;
 
 }
+
 
 .container_slider_btns {
   margin: auto;
