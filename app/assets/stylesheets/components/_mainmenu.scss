@@ -71,16 +71,23 @@
   align-self: center;
 }
 
-// .left_card {
-//   // position:absolute;
-// }
 
 .opponent_logo {
   align-self: center;
+  background-color: rgb(226, 226, 226);
+  border-radius: 50%;
+  margin: 16px;
+  margin-bottom: 48px
+
+}
+
+.next_fixture_info {
+  align-self: center;
+  margin: 24px;
 }
 
 .container_slider {
-  background-color: yellow;
+  background-color: rgb(237, 234, 164);
   width: 94%;
   height: 300px;
   margin-top: 8px;
