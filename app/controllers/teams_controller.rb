@@ -1,4 +1,8 @@
 class TeamsController < ApplicationController
+  before_action :set_team, only: [:show, :edit, :update, :destroy]
+
+  @team = Team.find(params[:id])
+
   def index
     @teams = Team.all
   end
@@ -36,5 +40,11 @@ class TeamsController < ApplicationController
     @team.destroy
     # No need for app/views/restaurants/destroy.html.erb
     redirect_to teams_path, status: :see_other
+  end
+
+  private
+
+  def set_team
+    @team = Team.find(params[:id])
   end
 end
