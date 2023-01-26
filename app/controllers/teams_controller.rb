@@ -3,9 +3,12 @@ class TeamsController < ApplicationController
   end
 
   def new
+    @team = Team.new
+    # authorize @team
+    # @team >> @teams
   end
 
   def show
-    @teams = ["juvenis", "iniciados", "boavista"]
+    @teams = []
   end
 end
