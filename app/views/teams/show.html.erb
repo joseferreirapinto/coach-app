@@ -1,1 +1,12 @@
-<h2><%= @team.name %></h2>
+
+<h1>TEAM NAME</h1>
+<p>falta definir o método e a variavel de instancia</p>
+
+<ul>
+  <% @teams.each do |team| %>
+  <li> <%= team.capitalize %></li>
+    <% end %>
+
+
+</ul>
+<%= Time.now %>

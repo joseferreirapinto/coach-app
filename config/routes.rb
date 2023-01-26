@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
 
-  resources :teams, only: [:create, :index, :destroy, :show]
+  get "index", to: "teams#index"
+  get "new", to: "teams#new"
+  get "show", to: "teams#show"
 end
