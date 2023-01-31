@@ -1,3 +1,30 @@
+<div class="container">
+    <% if current_user %>
+      <p>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+      </p>
+
+      <p>
+      <%= link_to "Edit Account", edit_user_registration_path %>
+
+      </p>
+      <br>
+      <%= image_tag(current_user.avatar_thumbnail) %>
+    <% else %>
+      <p>
+      <%= link_to "Create Account", new_user_registration_path %>
+      </p>
+      <p>
+      <%= link_to "Sign In", new_user_session_path %>
+      </p>
+
+    <% end %>
+
+</div>
+
+
+<%# TUDO ANTERIOR PARA TIRAR %>
+
 <div class="top_container btn_my_team">
  <img src="https://cdn-icons-png.flaticon.com/512/46/46887.png" alt="" width= "40"><a href="/show" class="btn_my_team">Team</a>
 </div>
